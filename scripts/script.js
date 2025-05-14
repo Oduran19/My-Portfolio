@@ -44,7 +44,6 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     // Make the fetch request to send the form data to Google Apps Script
     fetch(url, {
       method: 'POST',
-      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json'
       },
