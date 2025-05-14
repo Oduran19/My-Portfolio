@@ -38,8 +38,8 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
             gCaptchaResponse: grecaptcha.getResponse(),
         };
         
-  
-    const url = 'https://script.google.com/macros/s/AKfycbyuYpO5tK4_mry_4SRcU8gPXQYYFncd92zsZF4F52H3NJKgs4HDGXw0wUHgtSnWsASO/exec';
+                  
+    const url = 'https://script.google.com/macros/s/AKfycbzt7TZQxCjm1dZcj0ilNcGvBy3ldF10jgYxr6-lHaeadjSR1HGGumqOyEZArn2eXew/exec';
   
     // Make the fetch request to send the form data to Google Apps Script
     fetch(url, {
