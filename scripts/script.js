@@ -35,8 +35,8 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
             phone: document.getElementById('phone').value,
             message: document.getElementById('message').value,
             date: new Date().toISOString(),
-            gCaptchaResponse: grecaptcha.getResponse(),
-        };
+            gCaptchaResponse: document.getElementById('g-recaptcha-response').value,
+            };
         
                   
     const url = 'https://script.google.com/macros/s/AKfycbx8a7yV7CVl-XOQsNX5wRh9ErMpaMks67Zu-_l2ZK5FekcuH0TvYJxGkU-giUgE5CBnfw/exec';
@@ -55,7 +55,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
         alert('Form submitted successfully!');
         // Reset the form fields
         document.getElementById('contact-form').reset(); 
-        grecaptcha.reset();
+        captcha.reset();
       })
       .catch((err) => {
         console.log('Error submitting form:', err);
