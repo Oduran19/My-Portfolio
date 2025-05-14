@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Duran | Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+   
+    <div id="container">
+
+        <!--Mobile Nav-->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+        <!--Header area-->
+        <header>
+            <h1>Welcome to my portfolio</h1>
+            <p>Showcasing my work and interest in software and web development.</p>
+        </header>
+
+
+        <!--Tablet, Desktop Nav-->
+
+        <nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        
+        
+        <!--Main-->
+            <main>
+                <!--Hero Image-->
+            <img src="images/2ndhero.jpg" alt="Hero Image of rainforest">
+            <div id ="form">
+                <h2>Send me a message!</h2>
+                    <form id="contact-form" novalidate>
+                        <fieldset>
+                            <legend>Contact Form</legend>
+                            <label for="Fname">First Name:</label>
+                            <input type="text" id="Fname" name="Fname" required>
+
+                            <label for="Lname">Last Name:</label>
+                            <input type="text" id="Lname" name="Lname" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone">
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+                        </fieldset>
+                        
+                        <fieldset>
+                            <label for="reference">How did you find me?</label>
+                            <select id="reference" name="reference">
+                                <option value="friend">Friend</option>
+                                <option value="social_media">Social Media</option>
+                                <option value="search_engine">Search Engine</option>
+                                <option value="other">Other</option>
+                            </select>
+
+                            <div class="g-recaptcha" data-sitekey="6LfVyzcrAAAAADBlfA2UtKY5tXgd8ifFvk0MMYjE"></div>
+                            <input type="submit" value="Submit" class="btn">
+
+                        </fieldset>
+
+                    </form>
+            </div>
+
+            </div>
+            </main>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/odurancodes/" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/Oduran19" target="_blank">
+            <img src="images/gitHub.png" alt="GitHub"></a>
+        <a href="javascript:void(0);" onclick="copyEmail()" title="Copy Email">
+            <img src="images/email.jpg" alt="Email Icon"></a>
+        <p>&copy; 2025 Oscar Duran</p>
+        </div>
+    </footer>
+    <script src="/scripts/script.js"></script>     
+</body>
+</html>
