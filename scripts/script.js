@@ -22,13 +22,7 @@ function copyEmail() {
 document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the default form submission behavior
     
-    const captcha= grecaptcha.getResponse();
-    if (!captcha) {
-        alert('Please complete the CAPTCHA');
-        return;
-    }
-
-    const data = {
+    const formData = {
             Fname: document.getElementById('Fname').value,
             Lname: document.getElementById('Lname').value,
             email: document.getElementById('email').value,
@@ -45,7 +39,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     fetch(url, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'text/plain;charset=utf-8'
       },
       body: JSON.stringify(data),
     })
