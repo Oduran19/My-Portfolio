@@ -22,7 +22,7 @@ function copyEmail() {
 document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the default form submission behavior
     
-    const Data = {
+    const data = {
             Fname: document.getElementById('Fname').value,
             Lname: document.getElementById('Lname').value,
             email: document.getElementById('email').value,
