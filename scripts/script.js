@@ -39,7 +39,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
         };
         
                   
-    const url = 'https://script.google.com/macros/s/AKfycbzt7TZQxCjm1dZcj0ilNcGvBy3ldF10jgYxr6-lHaeadjSR1HGGumqOyEZArn2eXew/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbx8a7yV7CVl-XOQsNX5wRh9ErMpaMks67Zu-_l2ZK5FekcuH0TvYJxGkU-giUgE5CBnfw/exec';
   
     // Make the fetch request to send the form data to Google Apps Script
     fetch(url, {
