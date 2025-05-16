@@ -45,46 +45,47 @@
         </nav>
 
         
-        
-        <!--Main-->
-            <main>
-                <!--Hero Image-->
-            <img src="images/2ndhero.jpg" alt="Hero Image of rainforest">
-            <div id ="form">
-                <h2>Send me a message!</h2>
-                    <form id="contact-form" novalidate>
-                        <fieldset>
-                            <legend>Contact Form</legend>
-                            <label for="Fname">First Name:</label>
-                            <input type="text" id="Fname" name="Fname" required>
+        <main>    
+           <section id ="contact-hero">
+           <!--Hero Image-->
+           <img src="images/2ndhero.jpg" alt="Hero Image of rainforest">
+            <div class="contact-content">
+            <h2>Send me a message!</h2>
+            <p>Feel free to reach out for any inquiries or collaborations.</p>
 
-                            <label for="Lname">Last Name:</label>
-                            <input type="text" id="Lname" name="Lname" required>
+                <form id="contact-form" novalidate>
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                        <label for="Fname">First Name:</label>
+                        <input type="text" id="Fname" name="Fname" required>
 
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                        <label for="Lname">Last Name:</label>
+                        <input type="text" id="Lname" name="Lname" required>
 
-                            <label for="phone">Phone:</label>
-                            <input type="tel" id="phone" name="phone">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
 
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
 
-                        </fieldset>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" cols="30" required></textarea>
+
+                    </fieldset>
                         
-                        <fieldset>
-                            <label for="reference">How did you find me?</label>
-                            <select id="reference" name="reference">
-                                <option value="friend">Friend</option>
-                                <option value="social_media">Social Media</option>
-                                <option value="search_engine">Search Engine</option>
-                                <option value="other">Other</option>
-                            </select>
+                    <fieldset>
+                        <label for="reference">How did you find me?</label>
+                        <select id="reference" name="reference">
+                            <option value="friend">Friend</option>
+                            <option value="social_media">Social Media</option>
+                            <option value="search_engine">Search Engine</option>
+                            <option value="other">Other</option>
+                        </select>
 
-                            <div class="g-recaptcha" data-sitekey="6LeNYTorAAAAAO83XyuBbm1PyexIu7Oo2b0y4JnF"></div>
-                            <input type="submit" value="Submit" class="btn">
+                        <div class="g-recaptcha" data-sitekey="6LeNYTorAAAAAO83XyuBbm1PyexIu7Oo2b0y4JnF"></div>
+                        <input type="submit" value="Submit" class="btn">
 
-                        </fieldset>
+                    </fieldset>
 
                     </form>
             </div>
@@ -93,21 +94,18 @@
             </main>
     </div>
 
-
-
-
-
+    <!--Footer-->
     <footer>
         <div class="footer-icons">
         <a href="https://www.linkedin.com/in/odurancodes/" target="_blank">
             <img src="images/linkedin.png" alt="LinkedIn"></a>
         <a href="https://github.com/Oduran19" target="_blank">
-            <img src="images/github.png" alt="GitHub"></a>
+            <img src="images/gitHub.png" alt="GitHub"></a>
         <a href="javascript:void(0);" onclick="copyEmail()" title="Copy Email">
             <img src="images/email.jpg" alt="Email Icon"></a>
         <p>&copy; 2025 Oscar Duran</p>
         </div>
     </footer>
-    <script src="./scripts/script.js"></script>     
+    <script src="/scripts/script.js"></script>     
 </body>
 </html>
