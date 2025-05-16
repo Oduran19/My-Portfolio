@@ -138,24 +138,36 @@ header p {
   }
   
 /*Style rule for About page*/
-.about-hero-content {
+#about-hero {
   position: relative;
-  top: 60%;
-  bottom: 20%;
+  width: 100%;
+  height: auto;
+}
+
+#about-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-hero-content {
+  position: absolute;
+  top: 49%;
   left: 50%;
+  bottom: -30%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
   border-radius: 8px;
-  max-width: 90%;
+  max-width: 80%;
   width: 800px;
   color: #fff;
   font-family: 'Merriweather', serif;
-  overflow-y: auto;
   max-height: 80vh;
   line-height: 1.6;
   text-align: left;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 /* Contact Hero Section */
