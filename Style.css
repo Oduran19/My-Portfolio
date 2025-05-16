@@ -91,6 +91,19 @@ header p {
   padding: 1rem;
   border-radius: 10px;
   max-width: 90%;
+  border-left: 4px solid #20C997;
+  box-shadow: #2dbe87 0px 0px 10px;
+}
+
+.hero-project {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 90%;
 }
 
 .hero-content h2, .hero-content p, .hero-content a{
@@ -98,21 +111,41 @@ header p {
 }
 
 /* Projects Section */
-.project-list {
+.projects-page #projects-hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.projects-page #projects-hero h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  font-family: 'Merriweather', serif;
+  position: absolute;
+  top: 3%;
+  left: 25%; 
+}
+
+.projects-page .project-list {
+    position: absolute;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-top: 1rem;
+    top: 10%;
   }
 
-  .project-card {
+  .projects-page .project-card {
     background-color: #1a1a1a;
     padding: 1rem;
     border-radius: 8px;
     margin-top: 1rem;
     color: #fff;
     border-left: 4px solid #20C997;
+    box-shadow: #000000 0px 0px 10px;
   }
+
   /* Footer */
   footer {
     background-color: #000000;
