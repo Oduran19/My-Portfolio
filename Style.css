@@ -374,5 +374,18 @@ header p {
   .hero-content a:hover {
     background-color: #20C997;
     color: #000;
+  }  
+  /* About Section */
+  .about-hero-content {
+      width: 90%;
+      padding: 2.2rem;
+      font-size: 2rem;
+      transform: translate(-50%, -50%);
+      top: 40%;
+      left: 50%;
+      position: absolute;
+      text-align: center;
+      overflow: scroll;
   }
+    
 }
